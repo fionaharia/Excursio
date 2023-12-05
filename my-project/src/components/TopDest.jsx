@@ -1,7 +1,7 @@
 import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react";
 
-const TopDest = () => {
+export const TopDest = () => {
   return (
     <div className=" ">
       <HorizontalScrollCarousel />
@@ -54,7 +54,6 @@ const Card = ({ card }) => {
   );
 };
 
-export default TopDest;
 
 const cards = [
   {

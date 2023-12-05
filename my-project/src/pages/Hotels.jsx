@@ -143,7 +143,7 @@ export const Hotels = () => {
             <div class="mt-1">Rooms Booked: {rooms}</div>
           </div>
           <div class="mt-10 mb-2 text-2xl font-bold">Grand Total: Rs. {selectedHotel.hotelprice*duration*rooms}</div>
-          <Button>Book Now</Button>
+          <Button>Proceed</Button>
       </div>
       </div>
 

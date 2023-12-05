@@ -18,9 +18,9 @@ export const Hero = () => {
           class="rounded-2xl border-2 border-double border-white bg-black bg-opacity-70  px-5 py-2 text-white backdrop-blur-20 font-bold uppercase tracking-wide transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none"
           onClick={() => navigate('/hotels')}
           >Book Hotels</button>
-          <button class="rounded-2xl border-2 border-double border-white bg-black bg-opacity-70 px-5 py-2 text-white backdrop-blur-20 font-bold uppercase tracking-wide transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none "
+          {/* <button class="rounded-2xl border-2 border-double border-white bg-black bg-opacity-70 px-5 py-2 text-white backdrop-blur-20 font-bold uppercase tracking-wide transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none "
           onClick={() => navigate('/tours')}
-          >Book Tours</button>
+          >Book Tours</button> */}
         </div>    
       </div>
       
