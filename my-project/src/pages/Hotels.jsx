@@ -5,8 +5,10 @@ import axios from 'axios';
 import DatePicker from 'react-datepicker'
 import 'react-datepicker/dist/react-datepicker.css'
 import { Button } from '@nextui-org/react';
+import { useNavigate } from 'react-router-dom';
 
 export const Hotels = () => {
+  const navigate = useNavigate();
   const [hotel, setHotel] = useState([]);
   
   useEffect(() => {
@@ -55,6 +57,7 @@ export const Hotels = () => {
     hotelcity: City
    })
   }
+
 
   useEffect(() => {
     console.log('Hotel booked:', selectedHotel);
@@ -143,7 +146,9 @@ export const Hotels = () => {
             <div class="mt-1">Rooms Booked: {rooms}</div>
           </div>
           <div class="mt-10 mb-2 text-2xl font-bold">Grand Total: Rs. {selectedHotel.hotelprice*duration*rooms}</div>
-          <Button>Proceed</Button>
+          <Button
+          onClick={()=>navigate('/bookinghotel')}
+          >Proceed</Button>
       </div>
       </div>
 
