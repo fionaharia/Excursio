@@ -1,21 +1,17 @@
 import React from "react"
-import { Hero } from "./components/Hero"
-import { ChooseUs } from "./components/ChooseUs"
-import { Reviews } from "./components/Reviews"
-import { Footer } from "./components/Footer"
-import TopDest from "./components/TopDest"
-import { Hotels } from "./components/Hotels"
-import { Tours } from "./components/Tours"
+import { Hotels } from "./pages/Hotels"
+import { Tours } from "./pages/Tours"
+import { BrowserRouter,Route,Router,Routes } from "react-router-dom"
+import NavbarTop from "./components/NavbarTop"
+import { Landingpage } from "./pages/Landingpage"
 function App() {
 
   return (
     <div>
-        <Hero></Hero>
-        <ChooseUs></ChooseUs>
-        <Reviews></Reviews>
-        <Footer></Footer>
-        <Hotels></Hotels>
-        <Tours></Tours>
+        <Routes>
+          <Route exact path="/hotels" element={<Hotels />} />
+          <Route exact path="/" element={<Landingpage />} />
+        </Routes>
     </div>
   )
 }
