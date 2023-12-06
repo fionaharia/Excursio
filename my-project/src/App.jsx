@@ -5,6 +5,7 @@ import { BrowserRouter,Route,Router,Routes } from "react-router-dom"
 import NavbarTop from "./components/NavbarTop"
 import { Landingpage } from "./pages/Landingpage"
 import { HotelBooked } from "./pages/HotelBooked"
+import { Login } from "./pages/Login"
 function App() {
 
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route exact path="/tours" element={<Toursnew />} />
           <Route exact path="/" element={<Landingpage />} />
           <Route exact path="/bookinghotel" element={<HotelBooked />} />
+          {/* <Route exact path="/login" element={<Login />} /> */}
         </Routes>
     </div>
   )

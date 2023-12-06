@@ -12,6 +12,8 @@ app.use(cors({
 }));
 app.use(express.json());
 
+
+
 mongoose.connect("mongodb+srv://fionaharia:fiona1204@fionaharia.4xa6fnl.mongodb.net/hotels")
 .then( () => {
   console.log('Database Connected')
